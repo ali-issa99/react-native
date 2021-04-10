@@ -12,9 +12,9 @@ import {
 } 
 from 'react-native';
 
-// import AsyncStorage from '@react-native-community/async-storage';
-// 
-// import Loader from './Components/Loader';
+import AsyncStorage from '@react-native-community/async-storage';
+
+import Loader from './Loader';
 
 const LoginScreen = ({navigation}) => {
   const [userEmail, setUserEmail] = useState('');
@@ -57,7 +57,8 @@ const LoginScreen = ({navigation}) => {
       .then((responseJson) => {
         //Hide Loader
         setLoading(false);
-        console.log(responseJson);
+        consol
+        e.log(responseJson);
         // If server response message same as Data Matched
         if (responseJson.status === 'success') {
           AsyncStorage.setItem('user_id', responseJson.data.email);
@@ -77,7 +78,7 @@ const LoginScreen = ({navigation}) => {
 
   return (
     <View style={styles.mainBody}>
-      {/* <Loader loading={loading} /> */}
+      <Loader loading={loading} />
       <ScrollView
         keyboardShouldPersistTaps="handled"
         contentContainerStyle={{

@@ -15,7 +15,7 @@ import {
   ScrollView,
 } from 'react-native';
 
-// import Loader from './Components/Loader';
+import Loader from './Loader';
 
 const RegisterScreen = (props) => {
   const [userName, setUserName] = useState('');
@@ -134,7 +134,7 @@ const RegisterScreen = (props) => {
   }
   return (
     <View style={{flex: 1, backgroundColor: '#307ecc'}}>
-      {/* <Loader loading={loading} /> */}
+      <Loader loading={loading} />
       <ScrollView
         keyboardShouldPersistTaps="handled"
         contentContainerStyle={{

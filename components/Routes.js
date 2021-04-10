@@ -9,10 +9,10 @@ import {createStackNavigator} from '@react-navigation/stack';
 import {createDrawerNavigator} from '@react-navigation/drawer';
 
 // Import Screens
-import HomeScreen from './components/HomeScreen';
-import SettingsScreen from './components/SettingsScreen';
-import CustomSidebarMenu from './Components/CustomSidebarMenu';
-import NavigationDrawerHeader from './Components/NavigationDrawerHeader';
+import HomeScreen from './HomeScreen';
+import SettingsScreen from './SettingsScreen';
+import CustomSidebarMenu from './CustomSidebarMenu';
+import NavigationDrawerHeader from './NavigationDrawerHeader';
 
 const Stack = createStackNavigator();
 const Drawer = createDrawerNavigator();

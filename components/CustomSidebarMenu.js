@@ -9,9 +9,9 @@ import {
   DrawerContentScrollView,
   DrawerItemList,
   DrawerItem,
-} from '@react-navigation/drawer';
+} from 'react-navigation-drawer';
 
-// import AsyncStorage from '@react-native-community/async-storage';
+import AsyncStorage from '@react-native-community/async-storage';
 
 const CustomSidebarMenu = (props) => {
   return (
@@ -51,7 +51,7 @@ const CustomSidebarMenu = (props) => {
                 {
                   text: 'Confirm',
                   onPress: () => {
-                    // AsyncStorage.clear();
+                    AsyncStorage.clear();
                     props.navigation.replace('Auth');
                   },
                 },
